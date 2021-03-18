@@ -1,0 +1,25 @@
+[
+    {
+        "feature":"ANZ_HAUSHALTE_AKTIV",
+        "unknown_value": null
+    },
+    {
+        "feature":"ANZ_HH_TITEL",
+        "unknown_value": null
+    },
+    {
+        "feature":"ANZ_PERSONEN",
+        "unknown_value": null
+    },
+    {
+        "feature":"ANZ_TITEL",
+        "unknown_value": null
+    },
+    {
+        "feature":"KBA13_ANZAHL_PKW",
+        "unknown_value": null
+    }
+]
+
+
+
