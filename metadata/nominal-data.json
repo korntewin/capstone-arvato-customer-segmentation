@@ -1,4 +1,7 @@
+
 [
+    { "feature":"D19_KONSUMTYP", "unknown_value": null },
+    { "feature":"D19_LOTTO", "unknown_value": [0] },
     { "feature":"ZABEOTYP", "unknown_value": [-1, 9] },
     { "feature":"WOHNLAGE", "unknown_value": [-1]},
     { "feature":"VERS_TYP", "unknown_value": [-1]},
