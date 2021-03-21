@@ -14,7 +14,7 @@
     { "feature":"PLZ8_BAUMAX", "unknown_value": null },
     { "feature":"OST_WEST_KZ", "unknown_value": [-1]},
     { "feature":"NATIONALITAET_KZ", "unknown_value": [-1, 0]},
-    { "feature":"LP_FAMILIE_FEIN", "unknown_value": null },
+    { "feature":"LP_FAMILIE_FEIN", "unknown_value": [0]},
     { "feature":"LP_FAMILIE_GROB", "unknown_value": null },
     { "feature":"LP_LEBENSPHASE_FEIN", "unknown_value": null },
     { "feature":"LP_LEBENSPHASE_GROB", "unknown_value": null },
