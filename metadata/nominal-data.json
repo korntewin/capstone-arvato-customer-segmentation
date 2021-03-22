@@ -57,7 +57,7 @@
     },
     {
         "feature":"CAMEO_DEU_2015",
-        "unknown_value": null 
+        "unknown_value": ["XX"]
     },
     {
         "feature":"CAMEO_DEUINTL_2015",
