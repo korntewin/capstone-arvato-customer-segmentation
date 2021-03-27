@@ -59,17 +59,70 @@ class NominalEncoderAndMinMaxScaler(BaseEstimator, TransformerMixin):
         return pd.concat([non_nominal_df, nominal_df], axis=1)
 
 
+class NominalEncoder(BaseEstimator, TransformerMixin):
+    '''Implement one hot encoder to encode nominal features on the dataframe,
+    passthrough all non-nominal features and preserving column names of the dataframe
+    '''
+
+    def __init__(self, *, nominal_col: t.List[str], non_nominal_col: t.List[str]):
+        self.nominal_col = nominal_col
+        self.non_nominal_col = non_nominal_col
+
+        # these attributes will be generated after fitting
+        self.new_nominal_col = None
+        self.col_tf = None
+
+        return None
+
+    def fit(self, X: pd.DataFrame, y:t.Optional[np.ndarray]=None):
+
+        # implement column transformer to just encode the nominal features
+        # and passthrough all non nominal features
+        col_tf = ColumnTransformer(
+            [
+                ('non_nominal', 'passthrough', self.non_nominal_col),
+                ('nominal', OneHotEncoder(), self.nominal_col)
+            ]
+        )
+
+        # fit and memorize the transformer and new columns name 
+        col_tf.fit(X)
+        self.col_tf = col_tf
+        self.new_nominal_col = self._identify_new_column()
+
+        return self
+
+    def transform(self, X: pd.DataFrame):
+        transformed_X = self.col_tf.transform(X)
+        return pd.DataFrame(
+            transformed_X, 
+            columns=self.non_nominal_col + self.new_nominal_col)
+
+    def _identify_new_column(self):
+        # identify new column name
+        new_nominal_col: t.List[str] = []
+
+        for i in range(len(self.nominal_col)):
+            # sub categories of each nominal features will be recored in
+            # onehot encoder transformer which reside in col_tf.transfomers_
+            # at the index [1][1]
+            temp = [f'{self.nominal_col[i]}_{sub}' for sub in self.col_tf.transformers_[1][1].categories_[i]]
+            new_nominal_col += temp
+
+        return new_nominal_col
+
+
 class EncodeUnknownTransformer(BaseEstimator, TransformerMixin):
     '''Transformer to encode unknown value to np.nan
     '''
 
-    def __init__(self, feature2unk):
+    def __init__(self, feature2unk: t.Dict[str, t.Optional[t.List[float]]]):
         self.feature2unk = feature2unk
 
-    def fit(self, X=None, y=None):
+    def fit(self, X: t.Optional[pd.DataFrame]=None, y: t.Optional[np.ndarray]=None):
         return self
 
-    def transform(self, X):
+    def transform(self, X: pd.DataFrame):
 
         copy_X = X.copy()
 
@@ -79,7 +132,7 @@ class EncodeUnknownTransformer(BaseEstimator, TransformerMixin):
         return copy_X
 
 
-    def _encode_unk(self, df, feature, feature2unk):
+    def _encode_unk(self, df: pd.DataFrame, feature: str, feature2unk: t.Dict[str, t.Optional[t.List[float]]]):
 
         col = df[feature].copy()
 
@@ -97,27 +150,24 @@ class SelectColumnsTransformer(BaseEstimator, TransformerMixin):
         self.selected_features = selected_features[:]
         return None
 
-    def fit(self, X=None, y=None):
+    def fit(self, X: t.Optional[pd.DataFrame]=None, y: t.Optional[np.ndarray]=None):
         return self
 
-    def transform(self, X):
+    def transform(self, X: pd.DataFrame):
         return X[self.selected_features].copy()
 
 
-class PandasMedianImputer(BaseEstimator, TransformerMixin):
+class PandasImputer(BaseEstimator, TransformerMixin):
     '''Wrap median imputer so that the output still preserve column name
     '''
-    from sklearn.impute import SimpleImputer
-    import pandas as pd
 
-    def __init__(self, strategy='median'):
-        self.imputer = SimpleImputer(strategy=strategy)
+    def __init__(self, imputer: SimpleImputer):
+        self.imputer = imputer
         return None
 
-    def fit(self, X, y=None):
+    def fit(self, X: pd.DataFrame, y: t.Optional[np.ndarray]=None):
         self.imputer.fit(X)
         return self
 
-    def transform(self, X):
-        imputed_X = self.imputer.transform(X)
-        return pd.DataFrame(imputed_X, columns=X.columns)
+    def transform(self, X: pd.DataFrame):
+        return pd.DataFrame(self.imputer.transform(X), columns=X.columns)

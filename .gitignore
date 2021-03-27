@@ -2,3 +2,5 @@
 
 .ipynb_checkpoints/*
 data/*
+
+py_modules/__pycache__/*
