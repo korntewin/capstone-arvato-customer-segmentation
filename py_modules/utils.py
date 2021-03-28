@@ -8,7 +8,7 @@ import pandas as pd
 from scipy.sparse.construct import rand
 
 from sklearn.decomposition import PCA
-from sklearn.cluster import MiniBatchKMeans
+from sklearn.cluster import MiniBatchKMeans, KMeans
 from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
@@ -38,10 +38,32 @@ def calculate_appropriate_PCA_n_comp(*, pca: PCA, X: pd.DataFrame, threshold: fl
     return n_comp, cumsum_var_ratio
 
 
+def calculate_appropriate_n_cluster_KMeans(*, km: MiniBatchKMeans, \
+    X: pd.DataFrame, n_range: range=range(2,15)) -> t.List[float]:
+    '''Calculate appropriate n using elbow point method.
+    However, in the first version, I will just only return the average distance
+    of the KMeans to be plotted and select the n cluster manually
+    '''
+
+    # init return array
+    avg_distances = [1.0 for _ in n_range]
+
+    for i, n in enumerate(n_range):
+        km.set_params(n_clusters=n)
+        km.fit(X)
+
+        inertia_: float = km.inertia_
+        avg_distances[i] = inertia_
+
+    return avg_distances
+
+
 if __name__ == '__main__':
     
     test = np.array([[1, 2, 3], [4, 5, 6], [67, 870, 979], [6789, 98789, 678]])
     pca = PCA(random_state=42)
-
     print(calculate_appropriate_PCA_n_comp(pca=pca, X=test))
+
+    km = MiniBatchKMeans(random_state=42)
+    print(calculate_appropriate_n_cluster_KMeans(km=km, X=test, n_range=range(1,5)))
 
