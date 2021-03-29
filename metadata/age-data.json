@@ -1,0 +1,10 @@
+[
+    {
+        "feature":"MIN_GEBAEUDEJAHR",
+        "unknown_value": null
+    },
+    {
+        "feature":"GEBURTSJAHR",
+        "unknown_value": [0]
+    }
+]

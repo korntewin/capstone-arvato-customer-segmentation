@@ -1,0 +1,489 @@
+[
+    { "feature":"D19_BANKEN_DATUM", "unknown_value": [10]},
+    { "feature":"D19_BANKEN_OFFLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_BANKEN_ONLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_BANKEN_ONLINE_QUOTE_12", "unknown_value": null},
+    { "feature":"D19_GESAMT_ANZ_12", "unknown_value": [0]},
+    { "feature":"D19_GESAMT_ANZ_24", "unknown_value": [0]},
+    { "feature":"D19_GESAMT_DATUM", "unknown_value": [10]},
+    { "feature":"D19_GESAMT_OFFLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_GESAMT_ONLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_GESAMT_ONLINE_QUOTE_12", "unknown_value": null},
+    { "feature":"D19_TELKO_ANZ_12", "unknown_value": [0]},
+    { "feature":"D19_TELKO_ANZ_24", "unknown_value": [0]},
+    { "feature":"D19_TELKO_DATUM", "unknown_value": [10]},
+    { "feature":"D19_TELKO_OFFLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_TELKO_ONLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_VERSAND_ANZ_12", "unknown_value": [0]},
+    { "feature":"D19_VERSAND_ANZ_24", "unknown_value": [0]},
+    { "feature":"D19_VERSAND_DATUM", "unknown_value": [10]},
+    { "feature":"D19_VERSAND_OFFLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_VERSAND_ONLINE_DATUM", "unknown_value": [10]},
+    { "feature":"D19_VERSAND_ONLINE_QUOTE_12", "unknown_value": null },
+    { "feature":"D19_VERSI_ANZ_12", "unknown_value": [0] },
+    { "feature":"D19_VERSI_ANZ_24", "unknown_value": [0] },
+    { "feature":"D19_BANKEN_ANZ_12", "unknown_value": [0] },
+    { "feature":"D19_BANKEN_ANZ_24", "unknown_value": [0] },
+    { "feature":"W_KEIT_KIND_HH", "unknown_value": [-1, 0] },
+    { "feature":"WACHSTUMSGEBIET_NB", "unknown_value": [-1, 0] },
+    { "feature":"WOHNDAUER_2008", "unknown_value": [-1, 0] },
+    { "feature":"SEMIO_VERT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_TRADV", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_SOZ", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_REL", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_RAT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_PFLICHT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_MAT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_LUST", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_KULT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_KRIT", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_KAEM", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_FAM", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_ERL", "unknown_value": [-1, 9] },
+    { "feature":"SEMIO_DOM", "unknown_value": [-1, 9] },
+    { "feature":"RELAT_AB", "unknown_value": [-1, 9] },
+    { "feature":"PLZ8_GBZ", "unknown_value": [-1] },
+    { "feature":"PLZ8_HHZ", "unknown_value": [-1] },
+    { "feature":"PLZ8_ANTG2", "unknown_value": [-1] },
+    { "feature":"PLZ8_ANTG3", "unknown_value": [-1] },
+    { "feature":"PLZ8_ANTG4", "unknown_value": [-1] },
+    { "feature":"PLZ8_ANTG1", "unknown_value": [-1] },
+    { "feature":"ORTSGR_KLS9", "unknown_value": [-1] },
+    { "feature":"ONLINE_AFFINITAET", "unknown_value": [0] },
+    { "feature":"MOBI_REGIO", "unknown_value": [6] },
+    { "feature":"KBA05_KRSKLEIN", "unknown_value": [-1, 9] },
+    {
+        "feature":"KBA05_KRSVAN",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSOBER",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MAXAH",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSZUL",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MAXSEG",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MAXBJ",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOTRAD",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MAXVORB",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KW3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KW2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KW1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOD8",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOD1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOD2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOD3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_MOD4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG10",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG7",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG6",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG5",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ZUL1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_VORB2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_VORB1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_VORB0",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG9",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_SEG8",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ZUL4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ZUL3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ZUL2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSHERST3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSHERST2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSHERST1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_KRSAQUOT",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_HERST5",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_HERST4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_HERST3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_HERST2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_HERST1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_GBZ",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"KBA05_FRAU",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_DIESEL",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_CCM4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_CCM3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_CCM2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_CCM1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_BAUMAX",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"KBA05_AUTOQUOT",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ANTG4",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"KBA05_ANTG3",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"KBA05_ANTG2",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"KBA05_ANTG1",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"KBA05_ANHANG",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ALTER4",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ALTER3",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ALTER2",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"KBA05_ALTER1",
+        "unknown_value": [-1, 9]
+    },
+    {
+        "feature":"INNENSTADT",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"HH_EINKOMMEN_SCORE",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"GEOSCORE_KLS7",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"EWDICHTE",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"BALLRAUM",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"ALTER_HH",
+        "unknown_value": [0]
+    },
+    {
+        "feature":"KONSUMNAEHE",
+        "unknown_value": null
+    },
+    {
+        "feature": "KKK",
+        "unknown_value": [0, -1]
+    },
+    {
+        "feature": "AGER_TYP",
+        "unknown_value": [0, -1]
+    },
+    {
+        "feature": "ALTERSKATEGORIE_GROB",
+        "unknown_value": [0, -1]
+    },
+    {
+        "feature": "FINANZ_MINIMALIST",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "FINANZ_SPARER",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "FINANZ_VORSORGER",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "FINANZ_ANLEGER",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "FINANZ_UNAUFFAELLIGER",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "FINANZ_HAUSBAUER",
+        "unknown_value": [-1]
+    },
+    {
+        "feature": "D19_BANKEN_LOKAL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BANKEN_GROSS",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BANKEN_DIREKT",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BANKEN_REST",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BEKLEIDUNG_GEH",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BEKLEIDUNG_REST",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BIO_OEKO",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_BILDUNG",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_DIGIT_SERV",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_DROGERIEARTIKEL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_ENERGIE",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_FREIZEIT",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_GARTEN",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_HANDWERK",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_HAUS_DEKO",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_KINDERARTIKEL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_KOSMETIK",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_LEBENSMITTEL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_NAHRUNGSERGAENZUNG",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_RATGEBER",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_REISEN",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_SAMMELARTIKEL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_SCHUHE",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_SONSTIGE",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_TECHNIK",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_TELKO_MOBILE",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_TELKO_REST",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_TIERARTIKEL",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_VERSICHERUNGEN",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_VOLLSORTIMENT",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_VERSAND_REST",
+        "unknown_value": [0]
+    },
+    {
+        "feature": "D19_WEIN_FEINKOST",
+        "unknown_value": [0]
+    }
+]
+
+

@@ -1,0 +1,70 @@
+
+[
+    { "feature":"D19_KONSUMTYP", "unknown_value": null },
+    { "feature":"D19_LOTTO", "unknown_value": [0] },
+    { "feature":"ZABEOTYP", "unknown_value": [-1, 9] },
+    { "feature":"WOHNLAGE", "unknown_value": [-1]},
+    { "feature":"VERS_TYP", "unknown_value": [-1]},
+    { "feature":"TITEL_KZ", "unknown_value": [-1, 0]},
+    { "feature":"SOHO_FLAG", "unknown_value": [-1]},
+    { "feature":"SHOPPER_TYP", "unknown_value": [-1]},
+    { "feature":"RETOURTYP_BK_S", "unknown_value": [0]},
+    { "feature":"PRAEGENDE_JUGENDJAHRE", "unknown_value": [-1, 0]},
+    { "feature":"REGIOTYP", "unknown_value": [-1, 0]},
+    { "feature":"PLZ8_BAUMAX", "unknown_value": null },
+    { "feature":"OST_WEST_KZ", "unknown_value": [-1]},
+    { "feature":"NATIONALITAET_KZ", "unknown_value": [-1, 0]},
+    { "feature":"LP_FAMILIE_FEIN", "unknown_value": [0]},
+    { "feature":"LP_FAMILIE_GROB", "unknown_value": null },
+    { "feature":"LP_LEBENSPHASE_FEIN", "unknown_value": null },
+    { "feature":"LP_LEBENSPHASE_GROB", "unknown_value": null },
+    { "feature":"LP_STATUS_FEIN", "unknown_value": null },
+    { "feature":"LP_STATUS_GROB", "unknown_value": null },
+    { "feature":"KBA05_HERSTTEMP", "unknown_value": [-1, 9] },
+    { "feature":"KBA05_MODTEMP", "unknown_value": [-1, 9] },
+    { "feature":"KBA05_MOTOR", "unknown_value": [-1, 9] },
+    { "feature":"KBA05_MAXHERST", "unknown_value": [-1, 9] },
+    { "feature":"HEALTH_TYP", "unknown_value": [-1, 0] },
+    { "feature":"HAUSHALTSSTRUKTUR", "unknown_value": [-1, 0] },
+    { "feature":"GREEN_AVANTGARDE", "unknown_value": null },
+    {
+        "feature":"GFK_URLAUBERTYP",
+        "unknown_value": null
+    },
+    {
+        "feature":"GEBAEUDETYP_RASTER",
+        "unknown_value": null
+    },
+    {
+        "feature":"GEBAEUDETYP",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"FINANZTYP",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"ANREDE_KZ",
+        "unknown_value": [-1, 0]
+    },
+    {
+        "feature":"BIP_FLAG",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"CAMEO_DEUG_2015",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"CAMEO_DEU_2015",
+        "unknown_value": ["XX"]
+    },
+    {
+        "feature":"CAMEO_DEUINTL_2015",
+        "unknown_value": [-1]
+    },
+    {
+        "feature":"CJT_GESAMTTYP",
+        "unknown_value": [0]
+    }
+]
