@@ -3,6 +3,7 @@
 .ipynb_checkpoints/*
 data/*
 clean-data/*
+submissions/*
 
 py_modules/__pycache__/*
 
