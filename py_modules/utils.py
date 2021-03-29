@@ -3,9 +3,7 @@ import typing as t
 
 # third party lib
 import numpy as np
-from numpy.core.fromnumeric import var
 import pandas as pd
-from scipy.sparse.construct import rand
 
 from sklearn.decomposition import PCA
 from sklearn.cluster import MiniBatchKMeans, KMeans
@@ -13,7 +11,9 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.pipeline import Pipeline
+from sklearn.model_selection import RandomizedSearchCV
 
+from scipy.stats import loguniform, uniform, randint
 
 def calculate_appropriate_PCA_n_comp(*, pca: PCA, X: pd.DataFrame, threshold: float=0.9) -> t.Tuple[int, np.ndarray]:
     '''This function calculate the appropriate number of components
