@@ -1,4 +1,9 @@
+# core module
 numpy
 pandas
 matplotlib
 seaborn
+
+# add module
+scikit-optimize
+xgboost

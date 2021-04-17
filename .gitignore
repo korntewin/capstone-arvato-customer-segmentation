@@ -1,5 +1,4 @@
 .DS_Store
-
 .ipynb_checkpoints/*
 data/*
 clean-data/*
@@ -7,3 +6,6 @@ submissions/*
 
 py_modules/__pycache__/*
 
+# python env and vscode settings
+.vscode/*
+env-capstone/*
