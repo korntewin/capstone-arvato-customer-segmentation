@@ -1,5 +1,6 @@
 
 [
+    {"feature":"CLUSTER", "unknown_value": null},
     { "feature":"D19_KONSUMTYP", "unknown_value": null },
     { "feature":"D19_LOTTO", "unknown_value": [0] },
     { "feature":"ZABEOTYP", "unknown_value": [-1, 9] },
