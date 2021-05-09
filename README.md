@@ -1,1 +1,2 @@
-# capstone-arvato-customer-segmentation
+# How to get the data  
+All the data described in Datasets and Inputs section in the proposal, are provided by Udacity and Arvato in Chapter 5: Build Your Own Machine Learning Portfolio Project --> Lesson 1: Machine Learning Engineer Capstone Project --> Section 6: Bertelsmann/Arvato Project Workspace.
